@@ -28,12 +28,5 @@ public class StudentController : ApiController
           return student;
      }
  
-    // GET api//Programci
-    //Örneğin Programci yazarak, mesleği programcı olanlar gelecektir.
-      public IEnumerable<student> Get_MeslegeGoreUrunGetir(string meslek)
-      {
-        return student.Where(
-        (p) => string.Equals(p.Meslek, meslek,
-        StringComparison.OrdinalIgnoreCase));
-      }
+    
     }
